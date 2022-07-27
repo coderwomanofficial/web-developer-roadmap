@@ -3,6 +3,7 @@ export const ds = [
     id: 'n1',
     name: 'FUNDAMENTAL SKILLS',
     title: '',
+    hasChildren: true,
     children: [
       {
         id: 'n2',
@@ -27,6 +28,7 @@ export const ds = [
     id: 'n8',
     name: 'HTML',
     title: '',
+    hasChildren: true,
     children: [
       {
         id: 'n9',
@@ -42,6 +44,7 @@ export const ds = [
       {
         id: 'n15',
         name: 'SEMANTIC HTML',
+        hasChildren: true,
         children: [
           {
             id: 'n16',
@@ -155,10 +158,12 @@ export const ds = [
           {
             id: 'n83',
             title: 'FORMS',
+            hasChildren: true,
             children: [
               {
                 id: 'n84',
                 title: 'BASICS',
+                hasChildren: true,
                 children: [
                   { id: 'n85', title: 'basic input types' },
                   { id: 'n86', title: 'handling onchange event' },
@@ -174,6 +179,7 @@ export const ds = [
               {
                 id: 'n91',
                 title: 'MORE ADVANCED',
+                hasChildren: true,
                 children: [
                   { id: 'n92', title: 'the structure of a web form' },
                   {
@@ -190,6 +196,7 @@ export const ds = [
           {
             id: 'n97',
             title: 'EVENTS',
+            hasChildren: true,
             children: [
               {
                 id: 'n98',
@@ -241,6 +248,7 @@ export const ds = [
           {
             id: 'n124',
             title: 'GOOD TO KNOW',
+            hasChildren: true,
             children: [
               { id: 'n125', title: 'TABLES' },
               { id: 'n126', title: 'SCRIPT + NOSCRIPT' },
@@ -253,11 +261,13 @@ export const ds = [
   },
   {
     id: 'n128',
-    title: 'CSS',
+    name: 'CSS',
+    hasChildren: true,
     children: [
       {
         id: 'n129',
         title: 'BASICS',
+        hasChildren: true,
         children: [
           { id: 'n130', title: 'parsing CSS code' },
           { id: 'n131', title: 'how to add CSS to a website' },
@@ -280,6 +290,7 @@ export const ds = [
       {
         id: 'n146',
         title: 'ADVANCED',
+        hasChildren: true,
         children: [
           { id: 'n147', title: 'grouping selector: selector list' },
           { id: 'n148', title: 'combinator selectors' },

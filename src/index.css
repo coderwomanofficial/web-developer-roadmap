@@ -74,27 +74,98 @@ code {
   align-items: center;
 }
 
-.card {
+.parent {
+  font-size: 24px;
+  background-color: var(--accent);
+  flex: 1 1 auto;
+  display: flex;
+}
+.child {
   background-color: var(--color-primary);
-  color: var(--text);
+}
+.grandchild,
+.greatgrandchild,
+.greatgreatgrandchild {
+  border: 1px solid var(--accent);
+}
+
+.card {
   position: relative;
-  padding: 25px;
+  padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
   margin: 15px 0;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.card .childspan {
+  color: var(--color-primary);
+  background-color: var(--accent);
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 666px;
+}
+
+.card .grandchildspan {
+  color: var(--text);
+  border: 1px solid var(--accent);
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 666px;
+}
+
+.card:hover .childspan,
+.card:focus .childspan,
+.card:active .childspan,
+.card.selected .childspan {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.cardgroup {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.childcards,
+.grandchildcards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.childcard,
+.grandchildcard {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card:hover,
 .card:focus,
 .card:active,
 .card.selected {
-  background-color: var(--accent);
+  background-color: var(--color-shade);
+  color: var(--color-secondary);
 }
 
-.orgchart.myChart .oc-node .fullname {
-  display: flex;
-  justify-content: center;
-  color: var(--color-shade);
+@media screen and (max-width: 768px) {
+  .cardgroup {
+    flex-direction: column;
+  }
+  .childcards {
+    flex-direction: column;
+  }
+  .childcard {
+    flex-direction: column;
+  }
 }
