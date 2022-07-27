@@ -1,0 +1,357 @@
+export const ds = [
+  {
+    id: 'n1',
+    name: 'FUNDAMENTAL SKILLS',
+    title: '',
+    children: [
+      {
+        id: 'n2',
+        title: 'How does Internet and websites really work?',
+        dir: 'left',
+      },
+      {
+        id: 'n3',
+        title: 'History of the web',
+        dir: 'left',
+      },
+      { id: 'n4', title: 'HTTP/ HTTPS + FTP' },
+      { id: 'n5', title: 'Domains (including DNS)' },
+      { id: 'n6', title: 'Hosting' },
+      {
+        id: 'n7',
+        title: 'Setting up your coding environment',
+      },
+    ],
+  },
+  {
+    id: 'n8',
+    name: 'HTML',
+    title: '',
+    children: [
+      {
+        id: 'n9',
+        name: 'FUNDAMENTALS',
+        children: [
+          { id: 'n10', title: 'parsing HTML files' },
+          { id: 'n11', title: 'History of HTML' },
+          { id: 'n12', title: 'HTML element syntax' },
+          { id: 'n13', title: 'HTML document structure' },
+          { id: 'n14', title: 'HTML document meta data' },
+        ],
+      },
+      {
+        id: 'n15',
+        name: 'SEMANTIC HTML',
+        children: [
+          {
+            id: 'n16',
+            title: 'SECTIONS',
+            // children: [
+            //   { id: 'n17', title: '<body>' },
+            //   { id: 'n18', title: '<footer>' },
+            //   { id: 'n19', title: '<header>' },
+            //   { id: 'n20', title: '<article>' },
+            //   { id: 'n21', title: '<section>' },
+            //   { id: 'n22', title: '<aside>' },
+            //   { id: 'n23', title: '<nav>' },
+            //   { id: 'n24', title: '<h1> to <h6>' },
+            //   { id: 'n25', title: '<address>' },
+            // ],
+          },
+          {
+            id: 'n26',
+            title: 'GROUPING ELEMENTS',
+            // children: [
+            //   { id: 'n27', title: '<div>' },
+            //   { id: 'n28', title: '<main>' },
+            //   { id: 'n29', title: '<p>' },
+            //   { id: 'n30', title: '<hr>' },
+            //   { id: 'n31', title: '<figure>' },
+            //   { id: 'n32', title: '<figcaption>' },
+            //   { id: 'n33', title: '<pre>' },
+            //   {
+            //     id: 'n31',
+            //     title: 'LISTS',
+            //     children: [
+            //       { id: 'n32', title: '<ul>' },
+            //       { id: 'n33', title: '<ol>' },
+            //       { id: 'n34', title: '<li>' },
+            //       { id: 'n35', title: '<dl>' },
+            //       { id: 'n36', title: '<dt>' },
+            //       { id: 'n37', title: '<dd>' },
+            //     ],
+            //   },
+            // ],
+          },
+          {
+            id: 'n38',
+            title: 'FORMATTING ELEMENTS',
+            // children: [
+            //   { id: 'n39', title: '<strong>' },
+            //   { id: 'n40', title: '<em>' },
+            //   { id: 'n41', title: '<mark>' },
+            //   { id: 'n42', title: '<q>' },
+            //   { id: 'n43', title: '<cite>' },
+            //   { id: 'n44', title: '<blockquote>' },
+            //   { id: 'n45', title: '<time>' },
+            //   { id: 'n46', title: '<del>' },
+            //   { id: 'n47', title: '<ins>' },
+            //   { id: 'n48', title: '<sub>' },
+            //   { id: 'n49', title: '<sup>' },
+            //   { id: 'n50', title: '<small>' },
+            //   { id: 'n51', title: '<big>' },
+            //   { id: 'n52', title: '<code>' },
+            //   { id: 'n53', title: '<var>' },
+            //   { id: 'n54', title: '<samp>' },
+            //   { id: 'n55', title: '<kbd>' },
+            //   { id: 'n56', title: '<meter>' },
+            //   { id: 'n57', title: '<progress>' },
+            //   { id: 'n58', title: '<a>' },
+            //   { id: 'n59', title: '<abbr>' },
+            //   { id: 'n60', title: '<span>' },
+            //   { id: 'n61', title: '<br>' },
+            //   { id: 'n62', title: '<b>' },
+            // ],
+          },
+          {
+            id: 'n63',
+            title: 'LINKS ',
+            // children: [
+            //   { id: 'n64', title: 'href property' },
+            //   {
+            //     id: 'n65',
+            //     title: 'target property and difference between values',
+            //   },
+            //   { id: 'n66', title: 'url: absolute and relative' },
+            //   { id: 'n67', title: 'attributes and values of links' },
+            //   { id: 'n68', title: '<a> and <link>' },
+            //   {
+            //     id: 'n69',
+            //     title: 'navigation to the different parts of the website',
+            //   },
+            // ],
+          },
+          {
+            id: 'n70',
+            title: 'MULTIMEDIA',
+            // children: [
+            //   { id: 'n71', title: 'image embedding' },
+            //   { id: 'n72', title: 'supported image formats' },
+            //   { id: 'n73', title: 'alt attribute - why it is so important?' },
+            //   { id: 'n74', title: 'loading attribute and lazy load images' },
+            //   {
+            //     id: 'n75',
+            //     title: 'sizing an image - width and height properties',
+            //   },
+            //   { id: 'n76', title: '<picture> and <source> elements' },
+            //   { id: 'n77', title: 'srcset attribute' },
+            //   { id: 'n78', title: '<audio> and <video> elements embedding' },
+            //   { id: 'n79', title: '<iframe> element' },
+            //   { id: 'n80', title: '<canvas> element' },
+            //   { id: 'n81', title: '<svg> element' },
+            //   { id: 'n82', title: '<map> element' },
+            // ],
+          },
+          {
+            id: 'n83',
+            title: 'FORMS',
+            children: [
+              {
+                id: 'n84',
+                title: 'BASICS',
+                children: [
+                  { id: 'n85', title: 'basic input types' },
+                  { id: 'n86', title: 'handling onchange event' },
+                  { id: 'n87', title: 'the <label> element and how to use it' },
+                  {
+                    id: 'n88',
+                    title: 'the <button> element and different type values',
+                  },
+                  { id: 'n89', title: 'handling onclick event' },
+                  { id: 'n90', title: 'more input types' },
+                ],
+              },
+              {
+                id: 'n91',
+                title: 'MORE ADVANCED',
+                children: [
+                  { id: 'n92', title: 'the structure of a web form' },
+                  {
+                    id: 'n93',
+                    title: 'form configuration: communicate with server',
+                  },
+                  { id: 'n94', title: 'form validation' },
+                  { id: 'n95', title: 'form submission' },
+                  { id: 'n96', title: 'form reset' },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'n97',
+            title: 'EVENTS',
+            children: [
+              {
+                id: 'n98',
+                title: 'WINDOW EVENTS',
+                // children: [
+                //   { id: 'n99', title: 'onload' },
+                //   { id: 'n100', title: 'onunload' },
+                //   { id: 'n101', title: 'onbeforeunload' },
+                //   { id: 'n105', title: 'onresize' },
+                //   { id: 'n106', title: 'onscroll' },
+                // ],
+              },
+              {
+                id: 'n107',
+                title: 'KEYBOARD EVENTS',
+                // children: [
+                //   { id: 'n108', title: 'onkeydown' },
+                //   { id: 'n109', title: 'onkeyup' },
+                //   { id: 'n110', title: 'onkeypress' },
+                // ],
+              },
+              {
+                id: 'n111',
+                title: 'MOUSE EVENTS',
+                // children: [
+                //   { id: 'n112', title: 'onclick' },
+                //   { id: 'n113', title: 'ondblclick' },
+                //   { id: 'n114', title: 'onmousedown' },
+                //   { id: 'n115', title: 'onmouseup' },
+                //   { id: 'n116', title: 'onmousemove' },
+                //   { id: 'n117', title: 'onmouseout' },
+                // ],
+              },
+              {
+                id: 'n118',
+                title: 'GLOBAL EVENTS',
+                // children: [
+                //   { id: 'n119', title: 'onchange' },
+                //   { id: 'n121', title: 'onclose' },
+                //   { id: 'n122', title: 'onsubmit' },
+                // ],
+              },
+            ],
+          },
+          {
+            id: 'n123',
+            title: 'ACCESSIBILITY',
+          },
+          {
+            id: 'n124',
+            title: 'GOOD TO KNOW',
+            children: [
+              { id: 'n125', title: 'TABLES' },
+              { id: 'n126', title: 'SCRIPT + NOSCRIPT' },
+              { id: 'n127', title: 'OTHER TAGS - NOT MENTIONS ABOVE' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'n128',
+    title: 'CSS',
+    children: [
+      {
+        id: 'n129',
+        title: 'BASICS',
+        children: [
+          { id: 'n130', title: 'parsing CSS code' },
+          { id: 'n131', title: 'how to add CSS to a website' },
+          { id: 'n132', title: 'CSS syntax' },
+          { id: 'n133', title: 'CSS basic selectors' },
+          { id: 'n134', title: 'cascade and specifity - resolving conflicts' },
+          { id: 'n135', title: 'inheritance' },
+          { id: 'n136', title: 'the CSS box model' },
+          { id: 'n137', title: 'sizing CSS elements' },
+          { id: 'n138', title: 'styling CSS elements' },
+          { id: 'n139', title: 'fonts' },
+          { id: 'n140', title: 'images and urls in CSS' },
+          { id: 'n141', title: 'background properties' },
+          { id: 'n142', title: 'opacity/ transparency' },
+          { id: 'n143', title: 'gradients' },
+          { id: 'n144', title: 'shadows' },
+          { id: 'n145', title: 'relative units' },
+        ],
+      },
+      {
+        id: 'n146',
+        title: 'ADVANCED',
+        children: [
+          { id: 'n147', title: 'grouping selector: selector list' },
+          { id: 'n148', title: 'combinator selectors' },
+          { id: 'n149', title: 'pseudo-selectors' },
+          { id: 'n150', title: 'CSS variables' },
+          { id: 'n151', title: 'CSS functions' },
+        ],
+      },
+      {
+        id: 'n152',
+        title: 'LAYOUT',
+        // children: [
+        //   { id: 'n153', title: 'positioning' },
+        //   { id: 'n154', title: 'flexbox' },
+        //   { id: 'n155', title: 'grid' },
+        //   { id: 'n156', title: 'float' },
+        //   { id: 'n157', title: 'centering content' },
+        // ],
+      },
+      {
+        id: 'n158',
+        title: 'MEDIA QUERIES',
+        // children: [
+        //   { id: 'n159', title: 'media query types and syntax' },
+        //   { id: 'n160', title: 'mobile first approach' },
+        //   { id: 'n161', title: 'breakpoints' },
+        // ],
+      },
+      {
+        id: 'n162',
+        title: 'TRANSITIONS AND ANIMATIONS',
+        // children: [
+        //   { id: 'n163', title: 'transition properties' },
+        //   {
+        //     id: 'n164',
+        //     title: 'transitions with pseudo-elements',
+        //   },
+        //   {
+        //     id: 'n165',
+        //     title: 'animations',
+        //   },
+        //   {
+        //     id: 'n166',
+        //     title: 'transform property',
+        //   },
+        // ],
+      },
+      {
+        id: 'n167',
+        title: 'METODOLOGIES - BEM, OOCSS, SMACSS',
+      },
+      {
+        id: 'n168',
+        title: 'PREPROCESSORS - SASS + 7+1 PATTERN',
+      },
+      {
+        id: 'n169',
+        title: 'FRAMEWORKS',
+        // children: [
+        //   { id: 'n170', title: 'Bootstrap' },
+        //   { id: 'n171', title: 'TailwindCSS' },
+        //   { id: 'n172', title: 'Other - worth mention' },
+        // ],
+      },
+      {
+        id: 'n173',
+        title: 'WEB DESIGN RULES',
+      },
+      {
+        id: 'n174',
+        title: 'LAYOUT PATTERNS',
+      },
+    ],
+  },
+];
