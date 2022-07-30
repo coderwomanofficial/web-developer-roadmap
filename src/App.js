@@ -31,13 +31,13 @@ const App = () => {
                   className='parent'
                 />
               </div>
-              <div className='childcards'>
+              <div className='childcards cardgroup'>
                 {item.children &&
-                  item.children.map((child, index) => {
+                  item.children.map((child) => {
                     return (
                       <>
                         <div className='childcard'>
-                          <div class='arrow'>
+                          <div className='arrow'>
                             <span></span>
                             <span></span>
                             <span></span>
@@ -46,86 +46,78 @@ const App = () => {
                             key={child.id}
                             title={child.title}
                             name={child.name}
-                            index={index}
+                            number={child.number}
                             className='child'
                           />
                         </div>
-                        <div className='grandchildcards'>
-                          {child.children &&
-                            child.children.map((grandChild, index) => {
-                              return (
-                                <>
-                                  <div className='grandchildcard'>
-                                    <div class='arrow'>
-                                      <span></span>
-                                      <span></span>
-                                      <span></span>
-                                    </div>
-                                    <Card
-                                      key={grandChild.id}
-                                      name={grandChild.name}
-                                      title={grandChild.title}
-                                      hasChildren={grandChild.title}
-                                      index={index}
-                                      className='grandchild'
-                                    />
+                        {child.children &&
+                          child.children.map((grandChild) => {
+                            return (
+                              <>
+                                <div className='grandchildcard'>
+                                  <div className='arrow'>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                   </div>
-                                  {grandChild.children &&
-                                    grandChild.children.map(
-                                      (greatGrandChild) => {
-                                        return (
-                                          <>
-                                            <Card
-                                              key={greatGrandChild.id}
-                                              name={greatGrandChild.name}
-                                              title={greatGrandChild.title}
-                                              hasChildren={
-                                                greatGrandChild.title
-                                              }
-                                              className='greatgrandchild'
-                                            />
-                                            <div class='arrow'>
-                                              <span></span>
-                                              <span></span>
-                                              <span></span>
-                                            </div>
-                                            {greatGrandChild.children &&
-                                              greatGrandChild.children.map(
-                                                (greatGreatGrandChild) => {
-                                                  return (
-                                                    <>
-                                                      <Card
-                                                        key={
-                                                          greatGreatGrandChild.id
-                                                        }
-                                                        name={
-                                                          greatGreatGrandChild.name
-                                                        }
-                                                        title={
-                                                          greatGreatGrandChild.title
-                                                        }
-                                                        hasChildren={
-                                                          greatGreatGrandChild.title
-                                                        }
-                                                        className='greatgreatgrandchild'
-                                                      />
-                                                      <div class='arrow'>
-                                                        <span></span>
-                                                        <span></span>
-                                                        <span></span>
-                                                      </div>
-                                                    </>
-                                                  );
-                                                }
-                                              )}
-                                          </>
-                                        );
-                                      }
-                                    )}
-                                </>
-                              );
-                            })}
-                        </div>
+                                  <Card
+                                    key={grandChild.id}
+                                    name={grandChild.name}
+                                    title={grandChild.title}
+                                    number={grandChild.number}
+                                    className='grandchild'
+                                  />
+                                </div>
+
+                                {grandChild.children &&
+                                  grandChild.children.map((greatGrandChild) => {
+                                    return (
+                                      <>
+                                        <div className='greatgrandchildcard'>
+                                          <div className='arrow'>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                          </div>
+                                          <Card
+                                            key={greatGrandChild.id}
+                                            name={greatGrandChild.name}
+                                            title={greatGrandChild.title}
+                                            className='greatgrandchild'
+                                          />
+                                        </div>
+                                        {greatGrandChild.children &&
+                                          greatGrandChild.children.map(
+                                            (greatGreatGrandChild) => {
+                                              return (
+                                                <>
+                                                  <div className='arrow'>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                  </div>
+                                                  <Card
+                                                    key={
+                                                      greatGreatGrandChild.id
+                                                    }
+                                                    name={
+                                                      greatGreatGrandChild.name
+                                                    }
+                                                    title={
+                                                      greatGreatGrandChild.title
+                                                    }
+                                                    className='greatgreatgrandchild'
+                                                  />
+                                                </>
+                                              );
+                                            }
+                                          )}
+                                      </>
+                                    );
+                                  })}
+                              </>
+                            );
+                          })}
                       </>
                     );
                   })}

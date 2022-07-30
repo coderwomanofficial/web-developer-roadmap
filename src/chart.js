@@ -3,52 +3,53 @@ export const ds = [
     id: 'n1',
     name: 'FUNDAMENTAL SKILLS',
     title: '',
-    hasChildren: true,
+
     children: [
       {
         id: 'n2',
         title: 'How does Internet and websites really work?',
-        dir: 'left',
+        number: '1',
       },
       {
         id: 'n3',
         title: 'History of the web',
-        dir: 'left',
+        number: '2',
       },
-      { id: 'n4', title: 'HTTP/ HTTPS + FTP' },
-      { id: 'n5', title: 'Domains (including DNS)' },
-      { id: 'n6', title: 'Hosting' },
+      { id: 'n4', title: 'HTTP/ HTTPS + FTP', number: '3' },
+      { id: 'n5', title: 'Domains (including DNS)', number: '4' },
+      { id: 'n6', title: 'Hosting', number: '5' },
       {
         id: 'n7',
         title: 'Setting up your coding environment',
+        number: '6',
       },
     ],
   },
   {
     id: 'n8',
     name: 'HTML',
-    title: '',
-    hasChildren: true,
     children: [
       {
         id: 'n9',
         name: 'FUNDAMENTALS',
+        number: '1',
         children: [
-          { id: 'n10', title: 'parsing HTML files' },
-          { id: 'n11', title: 'History of HTML' },
-          { id: 'n12', title: 'HTML element syntax' },
-          { id: 'n13', title: 'HTML document structure' },
-          { id: 'n14', title: 'HTML document meta data' },
+          { id: 'n10', title: 'parsing HTML files', number: '1.1' },
+          { id: 'n11', title: 'History of HTML', number: '1.2' },
+          { id: 'n12', title: 'HTML element syntax', number: '1.3' },
+          { id: 'n13', title: 'HTML document structure', number: '1.4' },
+          { id: 'n14', title: 'HTML document meta data', number: '1.5' },
         ],
       },
       {
         id: 'n15',
         name: 'SEMANTIC HTML',
-        hasChildren: true,
+        number: '2',
         children: [
           {
             id: 'n16',
             title: 'SECTIONS',
+            number: '2.1',
             // children: [
             //   { id: 'n17', title: '<body>' },
             //   { id: 'n18', title: '<footer>' },
@@ -64,6 +65,7 @@ export const ds = [
           {
             id: 'n26',
             title: 'GROUPING ELEMENTS',
+            number: '2.2',
             // children: [
             //   { id: 'n27', title: '<div>' },
             //   { id: 'n28', title: '<main>' },
@@ -89,6 +91,7 @@ export const ds = [
           {
             id: 'n38',
             title: 'FORMATTING ELEMENTS',
+            number: '2.3',
             // children: [
             //   { id: 'n39', title: '<strong>' },
             //   { id: 'n40', title: '<em>' },
@@ -119,6 +122,7 @@ export const ds = [
           {
             id: 'n63',
             title: 'LINKS ',
+            number: '2.4',
             // children: [
             //   { id: 'n64', title: 'href property' },
             //   {
@@ -137,6 +141,7 @@ export const ds = [
           {
             id: 'n70',
             title: 'MULTIMEDIA',
+            number: '2.5',
             // children: [
             //   { id: 'n71', title: 'image embedding' },
             //   { id: 'n72', title: 'supported image formats' },
@@ -158,45 +163,32 @@ export const ds = [
           {
             id: 'n83',
             title: 'FORMS',
-            hasChildren: true,
+            number: '2.6',
             children: [
+              { id: 'n85', title: 'basic input types' },
+              { id: 'n86', title: 'handling onchange event' },
+              { id: 'n87', title: 'the <label> element and how to use it' },
               {
-                id: 'n84',
-                title: 'BASICS',
-                hasChildren: true,
-                children: [
-                  { id: 'n85', title: 'basic input types' },
-                  { id: 'n86', title: 'handling onchange event' },
-                  { id: 'n87', title: 'the <label> element and how to use it' },
-                  {
-                    id: 'n88',
-                    title: 'the <button> element and different type values',
-                  },
-                  { id: 'n89', title: 'handling onclick event' },
-                  { id: 'n90', title: 'more input types' },
-                ],
+                id: 'n88',
+                title: 'the <button> element and different type values',
               },
+              { id: 'n89', title: 'handling onclick event' },
+              { id: 'n90', title: 'more input types' },
+
+              { id: 'n92', title: 'the structure of a web form' },
               {
-                id: 'n91',
-                title: 'MORE ADVANCED',
-                hasChildren: true,
-                children: [
-                  { id: 'n92', title: 'the structure of a web form' },
-                  {
-                    id: 'n93',
-                    title: 'form configuration: communicate with server',
-                  },
-                  { id: 'n94', title: 'form validation' },
-                  { id: 'n95', title: 'form submission' },
-                  { id: 'n96', title: 'form reset' },
-                ],
+                id: 'n93',
+                title: 'form configuration: communicate with server',
               },
+              { id: 'n94', title: 'form validation' },
+              { id: 'n95', title: 'form submission' },
+              { id: 'n96', title: 'form reset' },
             ],
           },
           {
             id: 'n97',
             title: 'EVENTS',
-            hasChildren: true,
+            number: '2.7',
             children: [
               {
                 id: 'n98',
@@ -244,11 +236,12 @@ export const ds = [
           {
             id: 'n123',
             title: 'ACCESSIBILITY',
+            number: '2.8',
           },
           {
             id: 'n124',
             title: 'GOOD TO KNOW',
-            hasChildren: true,
+            number: '2.9',
             children: [
               { id: 'n125', title: 'TABLES' },
               { id: 'n126', title: 'SCRIPT + NOSCRIPT' },
@@ -262,46 +255,54 @@ export const ds = [
   {
     id: 'n128',
     name: 'CSS',
-    hasChildren: true,
     children: [
       {
         id: 'n129',
         title: 'BASICS',
-        hasChildren: true,
+        number: '1',
         children: [
-          { id: 'n130', title: 'parsing CSS code' },
-          { id: 'n131', title: 'how to add CSS to a website' },
-          { id: 'n132', title: 'CSS syntax' },
-          { id: 'n133', title: 'CSS basic selectors' },
-          { id: 'n134', title: 'cascade and specifity - resolving conflicts' },
-          { id: 'n135', title: 'inheritance' },
-          { id: 'n136', title: 'the CSS box model' },
-          { id: 'n137', title: 'sizing CSS elements' },
-          { id: 'n138', title: 'styling CSS elements' },
-          { id: 'n139', title: 'fonts' },
-          { id: 'n140', title: 'images and urls in CSS' },
-          { id: 'n141', title: 'background properties' },
-          { id: 'n142', title: 'opacity/ transparency' },
-          { id: 'n143', title: 'gradients' },
-          { id: 'n144', title: 'shadows' },
-          { id: 'n145', title: 'relative units' },
+          { id: 'n130', title: 'parsing CSS code', number: '1.1' },
+          { id: 'n131', title: 'how to add CSS to a website', number: '1.2' },
+          { id: 'n132', title: 'CSS syntax', number: '1.3' },
+          { id: 'n133', title: 'CSS basic selectors', number: '1.4' },
+          {
+            id: 'n134',
+            title: 'cascade and specifity - resolving conflicts',
+            number: '1.5',
+          },
+          { id: 'n135', title: 'inheritance', number: '1.6' },
+          { id: 'n136', title: 'the CSS box model', number: '1.7' },
+          { id: 'n137', title: 'sizing CSS elements', number: '1.8' },
+          { id: 'n138', title: 'styling CSS elements', number: '1.9' },
+          { id: 'n139', title: 'fonts', number: '1.10' },
+          { id: 'n140', title: 'images and urls in CSS', number: '1.11' },
+          { id: 'n141', title: 'background properties', number: '1.12' },
+          { id: 'n142', title: 'opacity/ transparency', number: '1.13' },
+          { id: 'n143', title: 'gradients', number: '1.14' },
+          { id: 'n144', title: 'shadows', number: '1.15' },
+          { id: 'n145', title: 'relative units', number: '1.16' },
         ],
       },
       {
         id: 'n146',
         title: 'ADVANCED',
-        hasChildren: true,
+        number: '2',
         children: [
-          { id: 'n147', title: 'grouping selector: selector list' },
-          { id: 'n148', title: 'combinator selectors' },
-          { id: 'n149', title: 'pseudo-selectors' },
-          { id: 'n150', title: 'CSS variables' },
-          { id: 'n151', title: 'CSS functions' },
+          {
+            id: 'n147',
+            title: 'grouping selector: selector list',
+            number: '2.1',
+          },
+          { id: 'n148', title: 'combinator selectors', number: '2.2' },
+          { id: 'n149', title: 'pseudo-selectors', number: '2.3' },
+          { id: 'n150', title: 'CSS variables', number: '2.4' },
+          { id: 'n151', title: 'CSS functions', number: '2.5' },
         ],
       },
       {
         id: 'n152',
         title: 'LAYOUT',
+        number: '3',
         // children: [
         //   { id: 'n153', title: 'positioning' },
         //   { id: 'n154', title: 'flexbox' },
@@ -313,6 +314,7 @@ export const ds = [
       {
         id: 'n158',
         title: 'MEDIA QUERIES',
+        number: '4',
         // children: [
         //   { id: 'n159', title: 'media query types and syntax' },
         //   { id: 'n160', title: 'mobile first approach' },
@@ -322,6 +324,7 @@ export const ds = [
       {
         id: 'n162',
         title: 'TRANSITIONS AND ANIMATIONS',
+        number: '5',
         // children: [
         //   { id: 'n163', title: 'transition properties' },
         //   {
@@ -341,14 +344,17 @@ export const ds = [
       {
         id: 'n167',
         title: 'METODOLOGIES - BEM, OOCSS, SMACSS',
+        number: '6',
       },
       {
         id: 'n168',
         title: 'PREPROCESSORS - SASS + 7+1 PATTERN',
+        number: '7',
       },
       {
         id: 'n169',
         title: 'FRAMEWORKS',
+        number: '8',
         // children: [
         //   { id: 'n170', title: 'Bootstrap' },
         //   { id: 'n171', title: 'TailwindCSS' },
@@ -358,10 +364,12 @@ export const ds = [
       {
         id: 'n173',
         title: 'WEB DESIGN RULES',
+        number: '9',
       },
       {
         id: 'n174',
         title: 'LAYOUT PATTERNS',
+        number: '10',
       },
     ],
   },

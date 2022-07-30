@@ -54,6 +54,7 @@ code {
   --background: #e6edfa;
   --text: black;
   --color-primary: #fff;
+  --color-rgb-primary: 255, 255, 255;
   --color-secondary: #6837fa;
   --accent: #3c9ffc;
   --color-shade: #c5d2ea;
@@ -62,6 +63,7 @@ code {
   --background: #44455e;
   --text: white;
   --color-primary: #2c2c3d;
+  --color-rgb-primary: 44, 44, 61;
   --color-secondary: #fff;
   --accent: #9168fb;
   --color-shade: #c5d2ea;
@@ -77,11 +79,16 @@ code {
 .parent {
   font-size: 24px;
   background-color: var(--accent);
+  color: var(--color-primary);
   flex: 1 1 auto;
   display: flex;
 }
 .child {
   background-color: var(--color-primary);
+}
+
+.grandchild {
+  background-color: rgba(var(--color-rgb-primary), 0.5);
 }
 .grandchild,
 .greatgrandchild,
@@ -134,7 +141,8 @@ code {
 }
 
 .childcards,
-.grandchildcards {
+.grandchildcards,
+.greatgrandchildcards {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -142,7 +150,8 @@ code {
 }
 
 .childcard,
-.grandchildcard {
+.grandchildcard,
+.greatgrandchildcard {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -162,10 +171,14 @@ code {
   .cardgroup {
     flex-direction: column;
   }
-  .childcards {
+  .childcards,
+  .grandchildcards,
+  .greatgrandchildcards {
     flex-direction: column;
   }
-  .childcard {
+  .childcard,
+  .grandchildcard,
+  .greatgrandchildcard {
     flex-direction: column;
   }
 }
